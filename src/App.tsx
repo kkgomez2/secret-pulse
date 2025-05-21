@@ -1,9 +1,8 @@
+import { useNavigate } from "react-router";
 import "./App.css";
 
 function App() {
-  const create = () => {
-    console.log("Route to creation page");
-  };
+  let navigate = useNavigate();
   return (
     <>
       <div>
@@ -11,13 +10,7 @@ function App() {
         <h2>Create anonymous surveys</h2>
         <p>Keep a pulse check on your people.</p>
       </div>
-      <button
-        onClick={() => {
-          create();
-        }}
-      >
-        Create Survey
-      </button>
+      <button onClick={() => {navigate("/create");}}>Create Survey</button>
     </>
   );
 }
