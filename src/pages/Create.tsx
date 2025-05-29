@@ -16,6 +16,10 @@ const Create = () => {
     });
     setQuestionForm([...newForm]);
   };
+
+  const exportForm = () => {
+    alert(JSON.stringify(questionForm));
+  }
   return (
     <>
       <div>Create</div>
@@ -38,6 +42,17 @@ const Create = () => {
               </div>
             );
           })}
+        </section>
+
+        <section>
+
+        <button
+          onClick={() => {
+            exportForm();
+          }}
+        >
+          Export Survey
+        </button>
         </section>
       </div>
     </>
