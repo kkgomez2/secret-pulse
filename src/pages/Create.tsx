@@ -1,8 +1,22 @@
-
 const Create = () => {
+  const addQuestion = () => {
+    console.log("Question Added");
+  };
   return (
-    <div>Create</div>
-  )
-}
+    <>
+      <div>Create</div>
 
-export default Create
+      <div>
+        <button
+          onClick={() => {
+            addQuestion();
+          }}
+        >
+          Add question
+        </button>
+      </div>
+    </>
+  );
+};
+
+export default Create;
