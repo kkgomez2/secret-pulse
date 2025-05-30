@@ -11,6 +11,7 @@ function App() {
         <p>Keep a pulse check on your people.</p>
       </div>
       <button onClick={() => {navigate("/create");}}>Create Survey</button>
+      <button onClick={() => {navigate("/test");}}>SurveyJS</button>
     </>
   );
 }
