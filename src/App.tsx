@@ -10,8 +10,29 @@ function App() {
         <h2>Create anonymous surveys</h2>
         <p>Keep a pulse check on your people.</p>
       </div>
-      <button onClick={() => {navigate("/create");}}>Create Survey</button>
-      <button onClick={() => {navigate("/test");}}>SurveyJS</button>
+      <div className="flex flex-col">
+        <button
+          onClick={() => {
+            navigate("/create");
+          }}
+        >
+          Create Survey
+        </button>
+        <button
+          onClick={() => {
+            navigate("/test");
+          }}
+        >
+          Create SurveyJS
+        </button>
+        <button
+          onClick={() => {
+            navigate("/results");
+          }}
+        >
+          See Survey Results
+        </button>
+      </div>
     </>
   );
 }
